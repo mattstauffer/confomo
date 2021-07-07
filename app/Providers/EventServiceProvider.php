@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\FriendWasAdded' => [
-            'App\Listeners\FetchFriendInfo',
+        \App\Events\FriendWasAdded::class => [
+            \App\Listeners\FetchFriendInfo::class,
         ],
     ];
 
